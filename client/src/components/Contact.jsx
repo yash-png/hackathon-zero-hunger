@@ -2,27 +2,60 @@ import React from "react";
 
 const Contact = () => {
   return (
-    
-      <div style={{height:"100vh",width:"100vw"}}>
-        <div className="d-flex justify-content-between" style={{height: "50vh",width:"100vw", backgroundColor:"#F44E77"}}>
-        
-          <div className="p-5">
-              <form className='d-flex flex-column pt-2'>
-                  <input className='mt-3 rounded' type="text" placeholder='Enter your name' />
-                  <input className='mt-3 rounded' type="text" placeholder='Enter a valid Email address' />
-                  <input className='mt-3 rounded input-lg' type="text" placeholder='Enter your message' />
-                  <button className='mt-3 rounded btn btn-white'>Submit</button>
-              </form>
-              </div>
-          
-          <div className="p-5"><h3 className='display-4 ' style={{fontFamily: "cursive"}}>Contact Us</h3></div>
-    
-      
-         </div>
-        <div style={{height: "50vh",width:"100vw",backgroundColor:"#16194F"}}>
+    <div style={{ height: "100vh", width: "100vw" }}>
+      <div
+        className="d-flex justify-content-between"
+        style={{ height: "50vh", width: "100vw", backgroundColor: "#F44E77" }}
+      >
 
-       </div>
+        <div className="container w-50 mt-5">
+          <h2 className="text-center display-4">Contact US</h2>
+          <form className="mt-5">
+            <div className="mb-3">
+              <label htmlFor="exampleInputEmail1" className="form-label display-4">
+
+                Email address
+              </label>
+              <input
+                type="email"
+                className="form-control"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+              />
+            </div>
+            <div className="mb-3">
+              <label htmlFor="exampleInputPassword1" className="form-label text-light mt-5 display-4">
+                Password
+              </label>
+              <input
+                type="password"
+                className="form-control"
+                id="exampleInputPassword1"
+              />
+            </div>
+            <div className="mb-3 form-check">
+              <input
+                type="checkbox"
+                className="form-check-input"
+                id="exampleCheck1"
+              />
+              <label className="form-check-label" htmlFor="exampleCheck1">
+                Check me out
+              </label>
+            </div>
+            <button type="submit" className="btn btn-primary">
+              Submit
+            </button>
+          </form>
+        </div>
       </div>
+      <div
+        style={{ height: "50vh", width: "100vw", backgroundColor: "#16194F" }}
+      >
+        {/* <h2 className="text-light text-center py-5">Get In Touch with us!!!</h2> */}
+
+      </div>
+    </div>
   );
 };
 
