@@ -14,7 +14,7 @@ const Contact = () => {
             <div className="mb-3">
               <label htmlFor="exampleInputEmail1" className="form-label display-4">
 
-                Email address
+                Enter Email
               </label>
               <input
                 type="email"
@@ -25,10 +25,10 @@ const Contact = () => {
             </div>
             <div className="mb-3">
               <label htmlFor="exampleInputPassword1" className="form-label text-light mt-5 display-4">
-                Password
+                Enter Message
               </label>
               <input
-                type="password"
+                type="text"
                 className="form-control"
                 id="exampleInputPassword1"
               />
@@ -39,7 +39,7 @@ const Contact = () => {
                 className="form-check-input"
                 id="exampleCheck1"
               />
-              <label className="form-check-label" htmlFor="exampleCheck1">
+              <label className="form-check-label text-light" htmlFor="exampleCheck1">
                 Check me out
               </label>
             </div>
