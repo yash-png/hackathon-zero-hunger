@@ -29,9 +29,6 @@ MERN stack: MongoDB, Express.js, React, Node.js
 ## Notable libraries
 Razorpay SDK
 
-## Design
-
-
 
 # Team Alpha - Members
 - **Yash Nerkar**
