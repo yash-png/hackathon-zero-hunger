@@ -14,7 +14,7 @@ function loadScript(src) {
     document.body.appendChild(script);
   });
 }
-const __DEV__ = document.domain === "localhost";
+const __DEV__ = document.domain === "localhost"
 // underdevelopment
 
 const Organization = () => {
@@ -97,7 +97,7 @@ const Organization = () => {
     });
 
     const options = {
-      key: __DEV__ ? process.env.REACT_APP_KEY : "PRODUCTION_KEY",
+      key: __DEV__ ?  "PRODUCTION_KEY": process.env.REACT_APP_KEY,
       currency: data.currency,
       amount: data.amount.toString(),
       order_id: data.id,
