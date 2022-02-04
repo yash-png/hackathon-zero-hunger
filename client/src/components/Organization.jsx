@@ -39,7 +39,7 @@ const Organization = () => {
   };
 
   const getData = async () => {
-    const response = await fetch(`/organizations/:${paramName}`, {
+    const response = await fetch(`/organization/:${paramName}`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -56,7 +56,7 @@ const Organization = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     // console.log(user);
-    const response = await fetch(`/organizations/:${paramName}`, {
+    const response = await fetch(`/organization/:${paramName}`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

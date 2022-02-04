@@ -133,7 +133,7 @@ router.post('/razorpay', async(req, res) => {
 })
 
 
-router.get('/organizations/:name', async(req, res) => {
+router.get('/organization/:name', async(req, res) => {
     const name = req.params.name;
     console.log(name);
     const finalName = name.split(':')[1];
